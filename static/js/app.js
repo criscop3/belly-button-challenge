@@ -63,9 +63,17 @@ d3.json(sampleData).then(function(data) {
         text: labels
     }
 
+    let layout = {
+        xaxis: {
+            title: {
+                text: 'OTU ID'
+
+            }
+        }
+    }
     let data2 = [trace2]
 
-    Plotly.newPlot('bubble', data2);
+    Plotly.newPlot('bubble', data2, layout);
 
 });
 
